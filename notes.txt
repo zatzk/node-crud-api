@@ -1,0 +1,11 @@
+docker compose up -d node_db
+docker compose logs
+docker compose build
+docker compose up node_app
+
+
+postman
+GET localhost:3000/users
+POST localhost:3000/users
+    "name": "",
+    "email": "",
